@@ -1,14 +1,8 @@
-exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+exports.modifyWebpackConfig = ({ config, stage }) => {
   if (stage === "build-html") {
-    actions.setWebpackConfig({
-      module: {
-        rules: [
-          {
-            test: /react-leaflet/,
-            use: loaders.null(),
-          }
-        ]
-      }
-    })
+    config.loader("null", {
+      test: /react-leaflet/,
+      loader: "null-loader",
+    });
   }
-}
+};
