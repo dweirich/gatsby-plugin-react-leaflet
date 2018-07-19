@@ -1,14 +1,20 @@
 {
   "name": "gatsby-plugin-react-leaflet",
-  "version": "1.0.3",
+  "version": "2.0.0-beta.1",
   "description": "React Leaflet for Gatsby",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "react-leaflet"
+  ],
   "author": "David Weirich",
   "license": "MIT",
   "dependencies": {
+    "gatsby": ">2.0.0-alpha",
     "react-leaflet": "^2.0.0"
   },
   "repository": {

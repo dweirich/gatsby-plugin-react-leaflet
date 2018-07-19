@@ -1,6 +1,8 @@
 # Getting started
 
-This package takes care of setting up your project for [React Leaflet](https://react-leaflet.js.org/). 
+This package takes care of setting up your project for [React Leaflet](https://react-leaflet.js.org/).
+
+The current npm version is for Gatsby v1. If you need the plugin for Gatsby v2, update the version in package.json to "next".
 
 First install the packages.
 ```
