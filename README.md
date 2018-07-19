@@ -14,7 +14,7 @@ Add the plugin to your Gatsby configuration.
 ```javascript
 module.exports = {
   plugins: [
-    'gatsby-react-leaflet'
+    'gatsby-plugin-react-leaflet'
   ]
 }
 ```
