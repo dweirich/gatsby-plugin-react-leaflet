@@ -4,11 +4,15 @@ This package takes care of setting up your project for [React Leaflet](https://r
 
 The current npm version is for Gatsby v1. If you need the plugin for Gatsby v2, update the version in package.json to "next".
 
+
+## Step 1
+
 First install the packages.
 ```
 npm i --save gatsby-plugin-react-leaflet react-leaflet leaflet
 ```
 
+## Step 2
 
 Add the plugin to your Gatsby configuration.
 
@@ -20,4 +24,32 @@ module.exports = {
   ]
 }
 ```
+
+## Step 3
+
+When using your `react-leaflet` components, be sure to wrap them in a check for `window`. For example:
+
+```javascript
+import React, { Component } from 'react'
+import { Map } from 'react-leaflet'
+
+export default class MyMap extends Component {
+  render() {
+    const { options } = this.props
+
+    if (typeof window !== 'undefined') {
+      return (
+        <Map {...options}>
+          {/* Map code goes here */}
+        </Map>
+      )
+    }
+    return null
+  }
+}
+```
+
+Without these checks your code will fail when gatsby tries to build it for production.
+
+`WebpackError: Minified React error #130`
 
