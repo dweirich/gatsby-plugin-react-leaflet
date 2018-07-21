@@ -1,6 +1,6 @@
 const React = require('react')
 
-exports.onRenderBody = ({ setHeadComponents }, options) => {
+exports.onRenderBody = ({ setHeadComponents }) => {
   const link = React.createElement('link', {
     key: 'leaflet',
     rel: 'stylesheet',
