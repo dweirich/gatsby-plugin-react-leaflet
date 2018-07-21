@@ -31,7 +31,7 @@ When using your `react-leaflet` components, be sure to wrap them in a check for 
 
 ```javascript
 import React, { Component } from 'react'
-import { Map } from 'react-leaflet
+import { Map } from 'react-leaflet'
 
 export default class MyMap extends Component {
   render() {
