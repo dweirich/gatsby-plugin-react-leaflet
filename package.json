@@ -1,10 +1,6 @@
 {
   "name": "gatsby-plugin-react-leaflet",
-<<<<<<< HEAD
   "version": "1.0.5",
-=======
-  "version": "2.0.0-alpha.1",
->>>>>>> e559051fa94c7b7474ff1320624044a1f82e01e6
   "description": "React Leaflet for Gatsby",
   "main": "index.js",
   "scripts": {
