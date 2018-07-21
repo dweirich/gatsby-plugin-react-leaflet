@@ -14,7 +14,7 @@
   "author": "David Weirich",
   "license": "MIT",
   "dependencies": {
-    "gatsby": ">2.0.0-alpha",
+    "gatsby": "^1.9.277",
     "react-leaflet": "^2.0.0"
   },
   "repository": {
