@@ -5,7 +5,7 @@ exports.onRenderBody = ({ setHeadComponents }) => {
     key: 'leaflet',
     rel: 'stylesheet',
     href: 'https://unpkg.com/leaflet@1.3.4/dist/leaflet.css',
-    integrity: 'sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==',
+    integrity: 'sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==',
     crossOrigin: ''
   })
 
