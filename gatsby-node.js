@@ -6,7 +6,7 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
       module: {
         rules: [
           {
-            test: /react-leaflet/,
+            test: /react-leaflet|leaflet/,
             exclude: [
               path.resolve(__dirname, '')
             ],
