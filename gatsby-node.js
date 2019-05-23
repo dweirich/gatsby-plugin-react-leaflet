@@ -1,5 +1,7 @@
 "use strict";
 
+var path = require('path');
+
 exports.onCreateWebpackConfig = function (_ref) {
   var stage = _ref.stage,
       loaders = _ref.loaders,
@@ -9,7 +11,7 @@ exports.onCreateWebpackConfig = function (_ref) {
     actions.setWebpackConfig({
       module: {
         rules: [{
-          test: /\/node_modules\/react-leaflet|\/node_modules\/leaflet/,
+          test: /\/node_modules.*\/(react-leaflet|leaflet)/,
           use: loaders["null"]()
         }]
       }
