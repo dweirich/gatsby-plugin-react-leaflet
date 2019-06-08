@@ -1,7 +1,5 @@
 "use strict";
 
-var path = require('path');
-
 exports.onCreateWebpackConfig = function (_ref) {
   var stage = _ref.stage,
       loaders = _ref.loaders,
