@@ -2,12 +2,17 @@ const path = require('path')
 
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   if (stage === "build-html") {
-    const regex = [new RegExp(path.join('node_modules', 'leaflet')), new RegExp(path.join('node_modules', 'leaflet'))]
+    const regex = [
+      /node_modules\/leaflet/,
+      /node_modules\/react-leaflet/,
+      /node_modules\\leaflet/,
+      /node_modules\\react-leaflet/
+    ]
     actions.setWebpackConfig({
       module: {
         rules: [
           {
-            include: regex,
+            test: regex,
             use: loaders.null()
           }
         ]
