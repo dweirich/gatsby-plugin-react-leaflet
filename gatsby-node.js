@@ -8,7 +8,7 @@ exports.onCreateWebpackConfig = function (_ref) {
       actions = _ref.actions;
 
   if (stage === "build-html") {
-    var regex = [/node_modules\/leaflet/, /node_modules\/react-leaflet/, /node_modules\\leaflet/, /node_modules\\react-leaflet/];
+    var regex = [/node_modules\/leaflet/, /node_modules\\leaflet/];
     actions.setWebpackConfig({
       module: {
         rules: [{
