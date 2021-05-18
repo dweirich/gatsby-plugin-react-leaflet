@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-react-leaflet",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "React Leaflet for Gatsby",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "author": "David Weirich",
   "license": "MIT",
   "peerDependencies": {
-    "gatsby": "^3.0.0",
+    "gatsby": "^2.0.0 || ^3.0.0",
     "leaflet": "^1.7.1",
     "react-leaflet": "^3.0.0"
   },
