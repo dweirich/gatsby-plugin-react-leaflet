@@ -1,14 +1,12 @@
-"use strict";
+const path = require('path');
 
-var path = require('path');
-
-exports.onCreateWebpackConfig = function (_ref) {
-  var stage = _ref.stage,
-      loaders = _ref.loaders,
-      actions = _ref.actions;
-
+exports.onCreateWebpackConfig = ({
+  stage,
+  loaders,
+  actions
+}) => {
   if (stage === "build-html" || stage === "develop-html") {
-    var regex = [/node_modules\/leaflet/, /node_modules\\leaflet/];
+    const regex = [/node_modules\/leaflet/, /node_modules\\leaflet/];
     actions.setWebpackConfig({
       module: {
         rules: [{
