@@ -11,7 +11,7 @@ exports.onCreateWebpackConfig = ({
       module: {
         rules: [{
           test: regex,
-          use: loaders.null()
+          use: [loaders.null()]
         }]
       }
     });
