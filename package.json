@@ -15,7 +15,7 @@
   "author": "David Weirich",
   "license": "MIT",
   "peerDependencies": {
-    "gatsby": "^2.0.0 || ^3.0.0",
+    "gatsby": "^2.0.0 || ^3.0.0 || ^4.0.0",
     "leaflet": "^1.7.1",
     "react-leaflet": "^3.0.0"
   },
