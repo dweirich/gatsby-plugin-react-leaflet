@@ -7,8 +7,8 @@ exports.onRenderBody = ({
   const link = React.createElement('link', {
     key: 'leaflet',
     rel: 'stylesheet',
-    href: 'https://unpkg.com/leaflet@1.7.1/dist/leaflet.css',
-    integrity: 'sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==',
+    href: 'https://unpkg.com/leaflet@1.9.3/dist/leaflet.css',
+    integrity: 'sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=',
     crossOrigin: ''
   });
   setHeadComponents([link]);

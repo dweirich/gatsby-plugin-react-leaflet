@@ -1,5 +1,3 @@
-const path = require('path');
-
 exports.onCreateWebpackConfig = ({
   stage,
   loaders,

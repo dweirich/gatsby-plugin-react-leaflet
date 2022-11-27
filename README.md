@@ -32,29 +32,24 @@ module.exports = {
 
 ## Step 3
 
-When using your `react-leaflet` components, be sure to wrap them in a check for `window`. For example:
+Add your React Leaflet components.
 
 ```javascript
-import React, { Component } from 'react'
-import { Map } from 'react-leaflet'
+import React from 'react'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
-export default class MyMap extends Component {
-  render() {
-    const { options } = this.props
-
-    if (typeof window !== 'undefined') {
-      return (
-        <Map {...options}>
-          {/* Map code goes here */}
-        </Map>
-      )
-    }
-    return null
-  }
+const IndexPage = () => {
+  return (
+    <MapContainer style={{ height: '400px' }} center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      <Marker position={[51.505, -0.09]}>
+        <Popup>
+          A pretty CSS3 popup. <br /> Easily customizable.
+        </Popup>
+      </Marker>
+    </MapContainer>
+  )
 }
-```
-
-Without these checks your code will fail when gatsby tries to build it for production.
-
-`WebpackError: Minified React error #130`
-
