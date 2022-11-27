@@ -2,7 +2,7 @@
 
 This package takes care of setting up your project for [React Leaflet](https://react-leaflet.js.org/).
 
-The current npm version is for Gatsby v2.
+The current npm version is for Gatsby v5.
 
 
 ## Step 1
